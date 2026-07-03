@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:makan/core/translation/app_translation.dart';
+import 'package:makan/features/home/presentation/screens/views/home_view.dart';
 
 class MakanApp extends StatelessWidget {
   const MakanApp({super.key});
@@ -22,6 +23,7 @@ class MakanApp extends StatelessWidget {
           ), 
           title: 'Makan',
           debugShowCheckedModeBanner: false,
+          home: HomeView(),
         );
       },
     );

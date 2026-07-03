@@ -1,6 +1,7 @@
 abstract class LocalizationKeys {
   // Home Screen
   static const welcome = 'welcome';
+  static const where = 'where do we want to travel?';
   static const searchHint = 'searchHint';
   static const asia = 'asia';
   static const europe = 'europe';
@@ -10,7 +11,7 @@ abstract class LocalizationKeys {
   static const australia = 'australia';
   static const mostPopular = 'mostPopular';
   static const viewAll = 'viewAll';
-  
+
   // Explore/Details Screens
   static const exploreEurope = 'exploreEurope';
   static const destinationsWaiting = 'destinationsWaiting';
@@ -21,7 +22,7 @@ abstract class LocalizationKeys {
   static const eiffelDescription = 'eiffelDescription';
   static const additionalImages = 'additionalImages';
   static const visitInfo = 'visitInfo';
-  
+
   // Info Items
   static const ticketPrice = 'ticketPrice';
   static const openingHours = 'openingHours';
