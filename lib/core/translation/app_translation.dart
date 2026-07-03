@@ -1,13 +1,15 @@
 import 'package:get/get.dart';
 // Import your keys file here
-import 'localization_keys.dart'; 
+import 'localization_keys.dart';
 
 class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
     'en_US': {
-      LocalizationKeys.welcome: 'Welcome, where do we want to travel?',
-      LocalizationKeys.searchHint: 'Search for a country, destination, or landmark',
+      LocalizationKeys.welcome: 'Welcome',
+      LocalizationKeys.where: 'Where do we want to travel?',
+      LocalizationKeys.searchHint:
+          'Search for a country, destination, or landmark',
       LocalizationKeys.asia: 'Asia (48 Countries)',
       LocalizationKeys.europe: 'Europe (50 Countries)',
       LocalizationKeys.africa: 'Africa (54 Countries)',
@@ -17,12 +19,14 @@ class AppTranslations extends Translations {
       LocalizationKeys.mostPopular: 'Most Popular',
       LocalizationKeys.viewAll: 'View All',
       LocalizationKeys.exploreEurope: 'Explore Europe',
-      LocalizationKeys.destinationsWaiting: '50 countries waiting to be explored',
+      LocalizationKeys.destinationsWaiting:
+          '50 countries waiting to be explored',
       LocalizationKeys.france: 'France',
       LocalizationKeys.paris: 'Paris',
       LocalizationKeys.eiffelTower: 'Eiffel Tower',
       LocalizationKeys.about: 'About',
-      LocalizationKeys.eiffelDescription: 'The Eiffel Tower is a symbol of the city of Paris. It was built in 1889 and is 324 meters tall.',
+      LocalizationKeys.eiffelDescription:
+          'The Eiffel Tower is a symbol of the city of Paris. It was built in 1889 and is 324 meters tall.',
       LocalizationKeys.additionalImages: 'Additional Images',
       LocalizationKeys.visitInfo: 'Visit Information',
       LocalizationKeys.ticketPrice: 'Ticket Price',
@@ -31,7 +35,8 @@ class AppTranslations extends Translations {
       LocalizationKeys.bookVisit: 'Book a Visit',
     },
     'ar_AE': {
-      LocalizationKeys.welcome: 'مرحباً، إلى أين نريد السفر؟',
+      LocalizationKeys.welcome: 'مرحباً،',
+      LocalizationKeys.where: 'إلى أين نريد السفر؟',
       LocalizationKeys.searchHint: 'ابحث عن دولة، وجهة أو معلم',
       LocalizationKeys.asia: 'آسيا (48 دولة)',
       LocalizationKeys.europe: 'أوروبا (50 دولة)',
@@ -47,7 +52,8 @@ class AppTranslations extends Translations {
       LocalizationKeys.paris: 'باريس',
       LocalizationKeys.eiffelTower: 'برج إيفل',
       LocalizationKeys.about: 'نبذة',
-      LocalizationKeys.eiffelDescription: 'برج إيفل هو رمز لمدينة باريس. تم بناؤه في عام 1889 ويبلغ ارتفاعه 324 متراً.',
+      LocalizationKeys.eiffelDescription:
+          'برج إيفل هو رمز لمدينة باريس. تم بناؤه في عام 1889 ويبلغ ارتفاعه 324 متراً.',
       LocalizationKeys.additionalImages: 'صور إضافية',
       LocalizationKeys.visitInfo: 'معلومات الزيارة',
       LocalizationKeys.ticketPrice: 'سعر التذكرة',

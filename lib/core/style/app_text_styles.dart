@@ -13,10 +13,16 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.white,
   );
-
+  static final headerPageText = TextStyle(
+    fontFamily: _fontFamily,
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w800,
+    color: AppColors.textHeadlineOnDark,
+    height: 1.3,
+  );
   static final homeGreetingTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 26.sp,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w800,
     color: AppColors.textHeadlineOnDark,
     height: 1.3,
@@ -24,7 +30,7 @@ class AppTextStyles {
 
   static final homeGreetingSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 17.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w500,
     color: AppColors.textHeadlineOnDark,
   );
@@ -32,21 +38,21 @@ class AppTextStyles {
 
   static final searchBarPlaceholder = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 14.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     color: AppColors.searchBarPlaceholderText,
   );
 
   static final sectionHeaderTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 17.sp,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w700,
     color: AppColors.textHeadlineOnLight,
   );
 
   static final sectionHeaderAction = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 13.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.textTabActive,
   );
@@ -54,14 +60,14 @@ class AppTextStyles {
  
   static final categoryCardTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 17.sp,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w700,
     color: AppColors.textHeadlineOnDark,
   );
 
   static final categoryCardSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 13.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
     color: AppColors.textHeadlineOnDark,
   );
@@ -69,7 +75,7 @@ class AppTextStyles {
 
   static final destinationCardTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 14.sp,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.textHeadlineOnLight,
   );
@@ -91,7 +97,7 @@ class AppTextStyles {
 
   static final listScreenAppBarTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 18.sp,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w700,
     color: AppColors.textHeadlineOnDark,
   );
