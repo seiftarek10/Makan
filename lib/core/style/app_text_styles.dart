@@ -16,7 +16,7 @@ class AppTextStyles {
 
   static final homeGreetingTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 26.sp,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w800,
     color: AppColors.textHeadlineOnDark,
     height: 1.3,
@@ -24,7 +24,7 @@ class AppTextStyles {
 
   static final homeGreetingSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 17.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w500,
     color: AppColors.textHeadlineOnDark,
   );
