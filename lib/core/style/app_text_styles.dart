@@ -13,7 +13,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.white,
   );
-
+  static final headerPageText = TextStyle(
+    fontFamily: _fontFamily,
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w800,
+    color: AppColors.textHeadlineOnDark,
+    height: 1.3,
+  );
   static final homeGreetingTitle = TextStyle(
     fontFamily: _fontFamily,
     fontSize: 16.sp,
@@ -69,14 +75,14 @@ class AppTextStyles {
 
   static final destinationCardTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 12.sp,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.textHeadlineOnLight,
   );
 
   static final destinationCardSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 10.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondaryMuted,
   );

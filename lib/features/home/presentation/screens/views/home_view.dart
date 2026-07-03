@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:makan/features/home/presentation/screens/widgets/all_continents.dart';
 import 'package:makan/features/home/presentation/screens/widgets/home_back_ground.dart';
 import 'package:makan/features/home/presentation/screens/widgets/home_header.dart';
+import 'package:makan/features/home/presentation/screens/widgets/popular_places.dart';
 import 'package:makan/features/home/presentation/screens/widgets/search_section.dart';
 
 class HomeView extends StatelessWidget {
@@ -30,6 +31,8 @@ class HomeView extends StatelessWidget {
                       SearchSection(),
                       SizedBox(height: 16.h),
                       AllContinentsWidget(),
+                      SizedBox(height: 16.h),
+                      PopularPlaces(),
                     ],
                   ),
                 ),
