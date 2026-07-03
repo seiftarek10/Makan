@@ -27,7 +27,7 @@ class HomeView extends StatelessWidget {
                   child: Column(
                     children: [
                       HomeScreenHeader(),
-                      SizedBox(height: 16.h),
+                      SizedBox(height: 8.h),
                       SearchSection(),
                       SizedBox(height: 16.h),
                       AllContinentsWidget(),

@@ -63,9 +63,9 @@ class AllContinentsWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
+            PositionedDirectional(
               bottom: 8,
-              left: 8,
+              start: 8,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
