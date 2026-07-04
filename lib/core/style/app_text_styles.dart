@@ -171,16 +171,16 @@ class AppTextStyles {
 
   static final attractionCardTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 14.sp,
+    fontSize: 18.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.textHeadlineOnLight,
   );
 
   static final attractionCardSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 12.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w400,
-    color: AppColors.textSecondaryMuted,
+    color: const Color.fromARGB(255, 92, 94, 118),
   );
 
   static final attractionCardMeta = TextStyle(

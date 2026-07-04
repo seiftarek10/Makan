@@ -3,7 +3,7 @@ import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/state_manager.dart';
 import 'package:makan/constants/assets.dart';
 import 'package:makan/core/style/app_text_styles.dart';
-import 'package:makan/features/continent/presentation/screens/views/continent.dart';
+import 'package:makan/features/continent/presentation/screens/views/continent_view.dart';
 import 'package:makan/features/home/presentation/model/containents_model.dart';
 
 class AllContinentsWidget extends StatelessWidget {
