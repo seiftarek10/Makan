@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:get/state_manager.dart';
 import 'package:makan/constants/assets.dart';
 import 'package:makan/core/style/app_text_styles.dart';
+import 'package:makan/features/continent/presentation/screens/views/continent.dart';
 import 'package:makan/features/home/presentation/model/containents_model.dart';
 
 class AllContinentsWidget extends StatelessWidget {
@@ -52,35 +55,38 @@ class AllContinentsWidget extends StatelessWidget {
         childAspectRatio: 2.7 / 2,
       ),
       itemBuilder: (context, index) {
-        return Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                  image: AssetImage(continents[index].imagePath),
-                  fit: BoxFit.cover,
+        return GestureDetector(
+          onTap: () => Get.to(() => ContinentView()),
+          child: Stack(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  image: DecorationImage(
+                    image: AssetImage(continents[index].imagePath),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            PositionedDirectional(
-              bottom: 8,
-              start: 8,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    continents[index].name,
-                    style: AppTextStyles.homeGreetingTitle,
-                  ),
-                  Text(
-                    '${continents[index].numberOfCountries} Countries',
-                    style: AppTextStyles.homeGreetingSubtitle,
-                  ),
-                ],
+              PositionedDirectional(
+                bottom: 8,
+                start: 8,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      continents[index].name,
+                      style: AppTextStyles.homeGreetingTitle,
+                    ),
+                    Text(
+                      '${continents[index].numberOfCountries} Countries',
+                      style: AppTextStyles.homeGreetingSubtitle,
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         );
       },
     );

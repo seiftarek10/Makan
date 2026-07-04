@@ -10,6 +10,7 @@ class AppTranslations extends Translations {
       LocalizationKeys.where: 'Where do we want to travel?',
       LocalizationKeys.searchHint:
           'Search for a country, destination, or landmark',
+      LocalizationKeys.searchWord: 'Search',
       LocalizationKeys.asia: 'Asia (48 Countries)',
       LocalizationKeys.europe: 'Europe (50 Countries)',
       LocalizationKeys.africa: 'Africa (54 Countries)',
@@ -38,6 +39,7 @@ class AppTranslations extends Translations {
       LocalizationKeys.welcome: 'مرحباً،',
       LocalizationKeys.where: 'إلى أين نريد السفر؟',
       LocalizationKeys.searchHint: 'ابحث عن دولة، وجهة أو معلم',
+      LocalizationKeys.searchWord: 'بحث',
       LocalizationKeys.asia: 'آسيا (48 دولة)',
       LocalizationKeys.europe: 'أوروبا (50 دولة)',
       LocalizationKeys.africa: 'أفريقيا (54 دولة)',

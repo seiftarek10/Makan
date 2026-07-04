@@ -3,24 +3,9 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static const homeBgGradientTop = Color.fromARGB(
-    255,
-    56,
-    68,
-    130,
-  ); // deep indigo
-  static const homeBgGradientMid = Color.fromARGB(
-    255,
-    156,
-    156,
-    177,
-  ); // dusty slate
-  static const homeBgGradientBottom = Color.from(
-    alpha: 1,
-    red: 0.973,
-    green: 0.812,
-    blue: 0.902,
-  ); // dusty rose
+  static const homeBgGradientTop = Color.fromARGB(255, 86, 104, 198); // deep indigo
+  static const homeBgGradientMid = Color.fromARGB(255, 184, 184, 209); // dusty slate
+  static const homeBgGradientBottom = Color.fromARGB(255, 249, 212, 233); // dusty rose
 
   static const List<Color> homeBackgroundGradient = [
     homeBgGradientTop,
