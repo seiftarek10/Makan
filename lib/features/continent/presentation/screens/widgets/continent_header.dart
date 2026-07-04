@@ -53,7 +53,7 @@ class _AnimatedContinentHeaderState extends State<AnimatedContinentHeader> {
       opacity: _isSearching ? 0 : 1,
       duration: const Duration(milliseconds: 300),
       child: GestureDetector(
-        onTap: Get.back,
+        onTap: () => Get.back(),
         child: CircleAvatar(
           radius: 18.r,
           backgroundColor: AppColors.white.withValues(alpha: 0.75),
