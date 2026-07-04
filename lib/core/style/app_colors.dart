@@ -3,28 +3,14 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static const homeBgGradientTop = Color.fromARGB(
-    255,
-    56,
-    68,
-    130,
-  ); // deep indigo
-  static const homeBgGradientMid = Color.fromARGB(
-    255,
-    156,
-    156,
-    177,
-  ); // dusty slate
-  static const homeBgGradientBottom = Color.from(
-    alpha: 1,
-    red: 0.973,
-    green: 0.812,
-    blue: 0.902,
-  ); // dusty rose
+  static const homeBgGradientTop = Color(0xff708fc8);
+  static const homeBgGradientMid = Color(0xffa39cae);
+  static const homeBgGradientBottom = Color(0xfffae7d5);
 
   static const List<Color> homeBackgroundGradient = [
     homeBgGradientTop,
     homeBgGradientMid,
+    homeBgGradientBottom,
     homeBgGradientBottom,
   ];
 
@@ -58,7 +44,7 @@ class AppColors {
 
   static const List<Color> trendingBadgeGradient = [
     trendingBadgeGradientStart,
-    trendingBadgeGradientEnd,
+    Color.fromARGB(255, 129, 34, 80),
   ];
   static const trendingBadgeText = Color(0xFFFFFFFF);
 
@@ -123,4 +109,5 @@ class AppColors {
   static const white = Color(0xFFFFFFFF);
   static const black = Color(0xFF000000);
   static const divider = Color(0xFFE0E0E5);
+  static const whiteWithOpacity = Color.fromARGB(144, 255, 255, 255);
 }

@@ -3,6 +3,7 @@ abstract class LocalizationKeys {
   static const welcome = 'welcome';
   static const where = 'where do we want to travel?';
   static const searchHint = 'searchHint';
+  static const searchWord = 'Search';
   static const asia = 'asia';
   static const europe = 'europe';
   static const africa = 'africa';
