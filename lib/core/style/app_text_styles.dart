@@ -35,7 +35,6 @@ class AppTextStyles {
     color: AppColors.textHeadlineOnDark,
   );
 
-
   static final searchBarPlaceholder = TextStyle(
     fontFamily: _fontFamily,
     fontSize: 12.sp,
@@ -57,7 +56,6 @@ class AppTextStyles {
     color: AppColors.textTabActive,
   );
 
- 
   static final categoryCardTitle = TextStyle(
     fontFamily: _fontFamily,
     fontSize: 15.sp,
@@ -71,7 +69,6 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.textHeadlineOnDark,
   );
-
 
   static final destinationCardTitle = TextStyle(
     fontFamily: _fontFamily,
@@ -93,7 +90,6 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.ratingText,
   );
-
 
   static final listScreenAppBarTitle = TextStyle(
     fontFamily: _fontFamily,
@@ -132,16 +128,16 @@ class AppTextStyles {
 
   static final listRowTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 15.sp,
+    fontSize: 18.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.listRowTitleText,
   );
 
   static final listRowSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 12.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w400,
-    color: AppColors.listRowSubtitleText,
+    color: const Color.fromARGB(255, 102, 102, 115),
   );
 
   static final countryHeroTitle = TextStyle(
@@ -215,7 +211,6 @@ class AppTextStyles {
     color: AppColors.bottomSheetSubtitleText,
   );
 
-
   static final statChipValue = TextStyle(
     fontFamily: _fontFamily,
     fontSize: 15.sp,
@@ -230,7 +225,6 @@ class AppTextStyles {
     color: AppColors.statChipLabelText,
   );
 
-  
   static final bodyParagraph = TextStyle(
     fontFamily: _fontFamily,
     fontSize: 13.5.sp,
@@ -253,11 +247,10 @@ class AppTextStyles {
     color: AppColors.visitInfoLabelText,
   );
 
-
   static final ctaButtonLabel = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w700,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
     color: AppColors.ctaButtonText,
   );
 }
