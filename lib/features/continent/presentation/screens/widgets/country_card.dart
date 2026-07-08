@@ -52,10 +52,10 @@ class CountryCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(countryName, style: AppTextStyles.listRowTitle),
+                Text(countryName, style: AppTextStyles.attractionCardTitle),
                 Text(
                   '$landmarksCount معلم',
-                  style: AppTextStyles.listRowSubtitle,
+                  style: AppTextStyles.attractionCardSubtitle,
                 ),
               ],
             ),

@@ -128,14 +128,14 @@ class AppTextStyles {
 
   static final listRowTitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 18.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w600,
-    color: AppColors.listRowTitleText,
+    color: AppColors.categoryCardAsiaTint,
   );
 
   static final listRowSubtitle = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 14.sp,
+    fontSize: 10.sp,
     fontWeight: FontWeight.w400,
     color: const Color.fromARGB(255, 102, 102, 115),
   );
@@ -249,7 +249,7 @@ class AppTextStyles {
 
   static final ctaButtonLabel = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 12.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.ctaButtonText,
   );

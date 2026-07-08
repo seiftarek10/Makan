@@ -76,15 +76,22 @@ class AppColors {
 
   static const tabUnderlineActive = Color(0xFF462B82);
 
-  static const bottomSheetGradientStart = Color(0xFF6A6FB0);
-  static const bottomSheetGradientEnd = Color(0xFF8B5FA8);
+  static const bottomSheetGradientStart = Color.fromARGB(255, 75, 89, 142);
+  static const bottomSheetGradientMidTop = Color.fromARGB(255, 225, 225, 245);
+  static const bottomSheetGradientMidBottom = Color.fromARGB(
+    255,
+    211,
+    167,
+    237,
+  );
+  static const bottomSheetGradientEnd = Color(0xFFf9fdfc);
 
   static const List<Color> bottomSheetGradient = [
     bottomSheetGradientStart,
-    bottomSheetGradientEnd,
+    bottomSheetGradientMidTop,
   ];
   static const bottomSheetTitleText = Color(0xFFFFFFFF);
-  static const bottomSheetSubtitleText = Color(0xFFE3DCEE);
+  static const bottomSheetSubtitleText = Color.fromARGB(205, 255, 255, 255);
 
   static const statChipFill = Color(0xFFAEB6D9);
   static const statChipValueText = Color(0xFFFFFFFF);
