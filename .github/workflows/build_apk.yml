@@ -40,3 +40,12 @@ jobs:
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+      - name: Upload to Firebase App Distribution
+
+
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.APP_ID }} # Add this to your Secrets
+          serviceCredentialsFileContent: ${{ secrets.GOOGLE_CREDENTIAL }}
+          groups: testers # Define your tester group in Firebase Console
+          file: build/app/outputs/flutter-apk/app-release.apk
