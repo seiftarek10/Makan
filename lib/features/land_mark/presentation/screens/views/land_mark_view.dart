@@ -69,7 +69,7 @@ class _LandMarkViewState extends State<LandMarkView> {
                             AbuotLandMarkWidget(),
                             SizedBox(height: 20),
                             AddtionalLandMarkImages(),
-                            SizedBox(height: 20),
+                            SizedBox(height: 19),
                             BookButton(),
                           ],
                         ),
