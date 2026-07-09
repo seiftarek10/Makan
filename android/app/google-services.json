@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832853840803",
+    "project_id": "makan-44787",
+    "storage_bucket": "makan-44787.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832853840803:android:03f47554b19327f65fc016",
+        "android_client_info": {
+          "package_name": "com.example.makan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHV829phQOC_IYxP7vcvnYnuD14fFUAvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
