@@ -71,6 +71,7 @@ class _LandMarkViewState extends State<LandMarkView> {
                             AddtionalLandMarkImages(),
                             SizedBox(height: 20),
                             BookButton(),
+                            
                           ],
                         ),
                       ),
