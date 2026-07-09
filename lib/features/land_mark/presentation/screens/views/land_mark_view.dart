@@ -35,10 +35,7 @@ class _LandMarkViewState extends State<LandMarkView> {
     return Scaffold(
       body: Stack(
         children: [
-          Transform.scale(
-            scale: scale,
-            child: LandMarkImage(),
-          ),
+          Transform.scale(scale: scale, child: LandMarkImage()),
           // Draggable Content Sheet
           DraggableScrollableSheet(
             controller: _controller,
@@ -72,7 +69,7 @@ class _LandMarkViewState extends State<LandMarkView> {
                             AbuotLandMarkWidget(),
                             SizedBox(height: 20),
                             AddtionalLandMarkImages(),
-                            SizedBox(height: 19),
+                            SizedBox(height: 20),
                             BookButton(),
                           ],
                         ),
