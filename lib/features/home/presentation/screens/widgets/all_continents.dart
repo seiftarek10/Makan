@@ -4,42 +4,42 @@ import 'package:get/state_manager.dart';
 import 'package:makan/constants/assets.dart';
 import 'package:makan/core/style/app_text_styles.dart';
 import 'package:makan/features/continent/presentation/screens/views/continent_view.dart';
-import 'package:makan/features/home/presentation/model/containents_model.dart';
+import 'package:makan/features/home/domain/entities/continet_entity.dart';
 
 class AllContinentsWidget extends StatelessWidget {
   const AllContinentsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    List<ContainentsModel> continents = [
-      ContainentsModel(
+    List<ContinetEntity> continents = [
+      ContinetEntity(
         name: 'Africa',
-        imagePath: Assets.assetsImagesAfrica,
+        imageUrl: Assets.assetsImagesAfrica,
         numberOfCountries: 54,
       ),
-      ContainentsModel(
+      ContinetEntity(
         name: 'Asia',
-        imagePath: Assets.assetsImagesAsia,
+        imageUrl: Assets.assetsImagesAsia,
         numberOfCountries: 48,
       ),
-      ContainentsModel(
+      ContinetEntity(
         name: 'Europe',
-        imagePath: Assets.assetsImagesEurope,
+        imageUrl: Assets.assetsImagesEurope,
         numberOfCountries: 44,
       ),
-      ContainentsModel(
+      ContinetEntity(
         name: 'North America',
-        imagePath: Assets.assetsImagesNorthAmerica,
+        imageUrl: Assets.assetsImagesNorthAmerica,
         numberOfCountries: 23,
       ),
-      ContainentsModel(
+      ContinetEntity(
         name: 'South America',
-        imagePath: Assets.assetsImagesSouthAmerica,
+        imageUrl: Assets.assetsImagesSouthAmerica,
         numberOfCountries: 12,
       ),
-      ContainentsModel(
+      ContinetEntity(
         name: 'Australia',
-        imagePath: Assets.assetsImagesAustralia,
+        imageUrl: Assets.assetsImagesAustralia,
         numberOfCountries: 11,
       ),
     ];
@@ -63,7 +63,7 @@ class AllContinentsWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
                   image: DecorationImage(
-                    image: AssetImage(continents[index].imagePath),
+                    image: AssetImage(continents[index].imageUrl),
                     fit: BoxFit.cover,
                   ),
                 ),

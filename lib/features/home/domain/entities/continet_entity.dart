@@ -1,11 +1,11 @@
-class ContainentsModel {
+class ContinetEntity {
   final String name;
-  final String imagePath;
   final int numberOfCountries;
+  final String imageUrl;
 
-  ContainentsModel({
+  ContinetEntity({
     required this.name,
-    required this.imagePath,
     required this.numberOfCountries,
+    required this.imageUrl,
   });
 }

@@ -12,7 +12,6 @@ class GraphQLFailure extends Failure {
   factory GraphQLFailure.handleError(QueryResult result) {
     final exception = result.exception;
 
-    // 1. No internet / Network errors
     if (exception?.linkException != null) {
       if (exception!.linkException is NetworkException) {
         return GraphQLFailure(
@@ -107,7 +106,6 @@ class GraphQLFailure extends Failure {
       return GraphQLFailure(errMessage: "No data received from server.");
     }
 
-    // Unknown error
 
     return GraphQLFailure(errMessage: "Something went wrong.");
   }

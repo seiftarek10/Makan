@@ -4,6 +4,9 @@ import 'package:makan/firebase_options.dart';
 import 'package:makan/makan.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(const MakanApp());
 }
