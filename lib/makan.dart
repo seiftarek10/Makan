@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:makan/core/biniding/initial_binding.dart';
+import 'package:makan/core/routes/app_routes.dart';
 import 'package:makan/core/translation/app_translation.dart';
+import 'package:makan/features/home/presentation/biniding/home_binding.dart';
 import 'package:makan/features/home/presentation/screens/views/home_view.dart';
 
 class MakanApp extends StatelessWidget {
@@ -15,15 +19,20 @@ class MakanApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return GetMaterialApp(
-          translations: AppTranslations(), 
-          locale: const Locale('en', 'US'), 
-          fallbackLocale: const Locale(
-            'en',
-            'US',
-          ), 
+          initialBinding: InitialBinding(),
+          translations: AppTranslations(),
+          locale: const Locale('en', 'US'),
+          fallbackLocale: const Locale('en', 'US'),
           title: 'Makan',
           debugShowCheckedModeBanner: false,
-          home: HomeView(),
+          initialRoute: AppRoutes.instance.homeView,
+          getPages: [
+            GetPage(
+              name: AppRoutes.instance.homeView,
+              page: () => const HomeView(),
+              binding: HomeBinding(),
+            ),
+          ],
         );
       },
     );
