@@ -249,7 +249,7 @@ class AppTextStyles {
 
   static final ctaButtonLabel = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 14.sp,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.ctaButtonText,
   );
