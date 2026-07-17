@@ -1,52 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/state_manager.dart';
-import 'package:makan/constants/assets.dart';
 import 'package:makan/core/style/app_text_styles.dart';
 import 'package:makan/features/continent/presentation/screens/views/continent_view.dart';
-import 'package:makan/features/home/presentation/model/containents_model.dart';
+import 'package:makan/features/home/domain/entities/continet_entity.dart';
 
 class AllContinentsWidget extends StatelessWidget {
-  const AllContinentsWidget({super.key});
-
+  const AllContinentsWidget({super.key, required this.continents});
+  final List<ContinetEntity> continents;
   @override
   Widget build(BuildContext context) {
-    List<ContainentsModel> continents = [
-      ContainentsModel(
-        name: 'Africa',
-        imagePath: Assets.assetsImagesAfrica,
-        numberOfCountries: 54,
-      ),
-      ContainentsModel(
-        name: 'Asia',
-        imagePath: Assets.assetsImagesAsia,
-        numberOfCountries: 48,
-      ),
-      ContainentsModel(
-        name: 'Europe',
-        imagePath: Assets.assetsImagesEurope,
-        numberOfCountries: 44,
-      ),
-      ContainentsModel(
-        name: 'North America',
-        imagePath: Assets.assetsImagesNorthAmerica,
-        numberOfCountries: 23,
-      ),
-      ContainentsModel(
-        name: 'South America',
-        imagePath: Assets.assetsImagesSouthAmerica,
-        numberOfCountries: 12,
-      ),
-      ContainentsModel(
-        name: 'Australia',
-        imagePath: Assets.assetsImagesAustralia,
-        numberOfCountries: 11,
-      ),
-    ];
-
     return GridView.builder(
       shrinkWrap: true,
-      itemCount: 6,
+      itemCount: continents.length,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -63,8 +29,7 @@ class AllContinentsWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
                   image: DecorationImage(
-                    image: AssetImage(continents[index].imagePath),
-                    fit: BoxFit.cover,
+                    image: NetworkImage(continents[index].imageUrl),
                   ),
                 ),
               ),
